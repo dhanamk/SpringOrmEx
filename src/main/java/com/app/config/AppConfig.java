@@ -30,6 +30,7 @@ public class AppConfig {
 		LocalSessionFactoryBean l=new LocalSessionFactoryBean();
 		
 		System.out.println("Done");
+		System.out.println("Developer");
 		return l;
 	}
 }
