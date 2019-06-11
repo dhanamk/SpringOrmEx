@@ -28,6 +28,8 @@ public class AppConfig {
 	public LocalSessionFactoryBean bean()
 	{
 		LocalSessionFactoryBean l=new LocalSessionFactoryBean();
+		
+		System.out.println("Done");
 		return l;
 	}
 }
