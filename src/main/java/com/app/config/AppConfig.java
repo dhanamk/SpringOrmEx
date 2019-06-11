@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 @Configuration
 public class AppConfig {
@@ -24,4 +25,9 @@ public class AppConfig {
 		return d;
 	}
 	
+	public LocalSessionFactoryBean bean()
+	{
+		LocalSessionFactoryBean l=new LocalSessionFactoryBean();
+		return l;
+	}
 }
